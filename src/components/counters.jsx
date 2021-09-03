@@ -12,6 +12,7 @@ class Counters extends Component {
       onRestart
     } = this.props;
     return (
+      
       <div>
         <button
           className="btn btn-success m-2"
@@ -27,6 +28,8 @@ class Counters extends Component {
         >
           <i className="fa fa-recycle" aria-hidden="true" />
         </button>
+
+
         {counters.map(counter => (
           <Counter
             key={counter.id}
